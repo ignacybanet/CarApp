@@ -7,7 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#f6e4dc">
 
     <TextView
         android:layout_width="match_parent"
@@ -20,12 +21,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <RadioGroup
             android:id="@+id/wybor_samochodu"
             android:layout_width="200dp"
-            android:layout_height="200dp">
+            android:layout_height="200dp"
+            android:layout_weight="1">
 
             <RadioButton
                 android:id="@+id/sedan"
@@ -51,11 +53,84 @@
         </RadioGroup>
 
         <ImageView
+            android:id="@+id/image"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="end"
             android:scaleType="centerCrop"
-            android:src="@drawable/znakzapytania" />
+            android:src="@drawable/znakzapytania"
+            android:layout_weight="1"/>
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dodatkowe funkcje"
+        android:background="#CCCCCC"
+        android:textAlignment="center"/>
+
+    <CheckBox
+        android:id="@+id/klimatyzacja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="klimatyzacja"/>
+
+    <CheckBox
+        android:id="@+id/wycieraczki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wycieraczki"/>
+
+    <CheckBox
+        android:id="@+id/kierownica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kierownica"
+        android:checked="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Zatwierdź"
+        android:textSize="30sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="#FFDDDD"
+        app:cardElevation="10dp"
+
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="#FFDDDD"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Podsumowanie"
+                android:textAlignment="center"
+                android:background="#cbac9f"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tutaj wyświetli się podsumowanie"
+                android:background="#cbac9f"
+                />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 </LinearLayout>
