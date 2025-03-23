@@ -16,8 +16,7 @@
         android:text="Konfigurator samochodu!"
         android:gravity="center"
         android:textSize="30sp"
-        android:textColor="#12AABB"
-        android:background="#211244"/>
+        android:background="#CCCCCC"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,7 +52,7 @@
         </RadioGroup>
 
         <ImageView
-            android:id="@+id/image"
+            android:id="@+id/myImage"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="end"
@@ -74,13 +73,15 @@
         android:id="@+id/klimatyzacja"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="klimatyzacja"/>
+        android:text="klimatyzacja"
+        />
 
     <CheckBox
         android:id="@+id/wycieraczki"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="wycieraczki"/>
+        android:text="wycieraczki"
+        />
 
     <CheckBox
         android:id="@+id/kierownica"
@@ -90,11 +91,16 @@
         android:checked="true"/>
 
     <Button
+        android:id="@+id/MyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Zatwierdź"
-        android:textSize="30sp"/>
+        android:textSize="30sp"
+        android:backgroundTint="#CCCCCC"
+        android:textColor="#6e6e6e"
+
+        />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -122,6 +128,7 @@
                 android:background="#cbac9f"/>
 
             <TextView
+                android:id="@+id/podsumowanie"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Tutaj wyświetli się podsumowanie"
